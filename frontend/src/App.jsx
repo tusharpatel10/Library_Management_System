@@ -1,15 +1,15 @@
 import { useState } from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Home from './componets/pages/Home'
-import Courses from './componets/pages/courses'
+import Courses from './componets/account/courses'
 import Detaile from './componets/pages/Detail'
 import Login from './componets/pages/Login'
 import Registration from './componets/pages/Registration'
 import Checkout from './componets/pages/Checkout'
-import MyCourses from './componets/pages/MyCourses'
-import EnrolledCourses from './componets/pages/EnrolledCourses'
-import WatchCourses from './componets/pages/WatchCourses'
-import ChangePassword from './componets/pages/ChangePassword'
+import MyCourses from './componets/account/MyCourses'
+import EnrolledCourses from './componets/account/EnrolledCourses'
+import WatchCourses from './componets/account/WatchCourses'
+import ChangePassword from './componets/account/ChangePassword'
 
 
 function App() {
@@ -20,15 +20,15 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path='/' element={<Home />} />
-          <Route path='/Courses' element={<Courses />} />
           <Route path='/Detail' element={<Detaile />} />
           <Route path='/Login' element={<Login />} />
           <Route path='/Registration' element={<Registration />} />
           <Route path='/Checkout' element={<Checkout />} />
-          <Route path='/MyCourses' element={<MyCourses />} />
-          <Route path='/EnrolledCourses' element={<EnrolledCourses />} />
-          <Route path='/WatchCourses' element={<WatchCourses />} />
-          <Route path='/ChangePassword' element={<ChangePassword />} />
+          <Route path='/account/courses' element={<Courses />} />
+          <Route path='/account/MyCourses' element={<MyCourses />} />
+          <Route path='/account/enrolled-courses' element={<EnrolledCourses />} />
+          <Route path='/account/Watch-courses' element={<WatchCourses />} />
+          <Route path='/account/change-password' element={<ChangePassword />} />
         </Routes>
       </BrowserRouter>
     </>
